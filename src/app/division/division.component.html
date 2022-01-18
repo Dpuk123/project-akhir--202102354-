@@ -1,0 +1,47 @@
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+
+                </div>
+                <div class="card-body">
+                    <table class="table table-head-fixed text-nowrap">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>action</th>
+                            </tr>
+                        </thead>
+                        <tbody *ngFor="let currentDivision of divisions; let i = index">
+                            <tr>
+                                <td>{{currentDivision._id}}</td>
+                                <td>{{currentDivision.name}}</td>
+                                <td>{{currentDivision.description}}</td> 
+                                <button type="button" 
+                               class="tambah" 
+                               ng-click="" 
+                               ng-show="">Tambah</button>
+
+                               <button type="button" 
+                              class="edit" 
+                              ng-click="" 
+                              ng-show="!inactive">Edit</button>
+
+                                <button type="button" 
+                                class="delete" 
+                                 ng-click="" 
+                                 ng-show="!inative">Delete</button>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
